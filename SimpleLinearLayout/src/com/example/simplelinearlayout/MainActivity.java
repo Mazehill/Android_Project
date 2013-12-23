@@ -3,6 +3,8 @@ package com.example.simplelinearlayout;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.Button;
+import android.view.View;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +12,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		Button button=(Button) findViewById(R.id.button1);
+		button.setText("Send");
 	}
 
 	@Override
